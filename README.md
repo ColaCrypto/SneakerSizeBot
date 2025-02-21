@@ -1,34 +1,70 @@
 # SneakerSizeBot 🤖👟
 
-**SneakerSizeBot** è un bot Telegram creato per aiutare i clienti a verificare la disponibilità di taglie di sneaker. Il bot è stato sviluppato per gestire le richieste dei clienti in modo efficiente e veloce, fornendo informazioni sulle taglie disponibili e sui modelli di scarpe.
+**SneakerSizeBot** is a Telegram bot designed to help customers check the availability of sneaker sizes. The bot was developed to handle customer requests efficiently and quickly, providing information on available sizes and shoe models.
 
-## Funzionalità principali 🚀
+## Key Features 🚀
 
-- **Verifica disponibilità taglie**: Il bot permette agli utenti di selezionare una taglia specifica e visualizzare i modelli di sneaker disponibili per quella taglia.
-- **Interazione semplice**: Gli utenti possono interagire con il bot tramite comandi semplici e intuitivi.
-- **Gestione delle richieste**: Il bot è progettato per gestire le richieste dei clienti in modo automatico, riducendo il carico di lavoro manuale.
+- **Size Availability Check**: The bot allows users to select a specific size and view the available sneaker models for that size.
+- **Simple Interaction**: Users can interact with the bot using simple and intuitive commands.
+- **Request Management**: The bot is designed to handle customer requests automatically, reducing manual workload.
 
-## Come usare il bot 🤔
+## How to Use the Bot 🤔
 
-1. **Avvia il bot**: Scrivi `/start` per avviare il bot e visualizzare il messaggio di benvenuto.
-2. **Verifica le taglie disponibili**: Scrivi `/taglie` per visualizzare un menu con tutte le taglie disponibili.
-3. **Seleziona una taglia**: Clicca su una delle taglie disponibili per visualizzare i modelli di sneaker disponibili per quella taglia.
-4. **Aiuto**: Scrivi `/aiuto` per ricevere istruzioni su come utilizzare il bot.
+1. **Start the Bot**: Type `/start` to launch the bot and view the welcome message.
+2. **Check Available Sizes**: Type `/taglie` to display a menu with all available sizes.
+3. **Select a Size**: Click on one of the available sizes to view the sneaker models available for that size.
+4. **Help**: Type `/aiuto` to get instructions on how to use the bot.
 
-## Comandi disponibili 📜
+## Available Commands 📜
 
-- `/start`: Avvia il bot e visualizza il messaggio di benvenuto.
-- `/taglie`: Mostra un menu con tutte le taglie disponibili.
-- `/aiuto`: Fornisce istruzioni su come utilizzare il bot.
-- `/amicistretti`: Comando speciale per gli amici stretti.
+- `/start`: Starts the bot and displays the welcome message.
+- `/taglie`: Shows a menu with all available sizes.
+- `/aiuto`: Provides instructions on how to use the bot.
+- `/amicistretti`: Special command for close friends.
 
-### Prerequisiti
+## Installation and Configuration 🛠️
+
+### Prerequisites
 
 - Python 3.x
-- Librerie Python: `python-telegram-bot`
+- Python Libraries: `python-telegram-bot``
 
-### Passaggi per l'installazione
+### Installation Steps
 
-1. Clona la repository:
+1. Clone the repository:
    ```bash
-   git clone https://github.com/tuo-username/SneakerSizeBot.git
+   git clone https://github.com/your-username/SneakerSizeBot.git
+   ```
+
+2. Install the dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Create a Constants.py file and insert your Telegram API token:
+   ```python
+   API_KEY = 'your-api-token'
+   ```
+
+4. Run the bot:
+   ```bash
+   python main.py
+   ```
+
+## File Descriptions 📂
+
+- **main.py**: The main script that runs the Telegram bot. It handles commands, user interactions, and displays available sneaker models based on selected sizes.
+- **Constants.py**: Contains the Telegram bot API key. This file should not be shared publicly as it contains sensitive information.
+- **Responses.py**: Handles predefined responses for user messages. It processes user input and provides appropriate replies.
+
+## Sensitive Data 🔒
+
+The Constants.py file contains the Telegram bot API token, which is sensitive information. Do not share this file publicly. If you want to share the code, make sure to remove or obscure the token.
+
+## Contributions 🤝
+
+If you'd like to contribute to the project, feel free to fork the repository and submit a pull request. All contributions are welcome!
+
+## License 📄
+
+This project is released under the MIT License. See the LICENSE file for more details.
